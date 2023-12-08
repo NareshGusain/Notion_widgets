@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: fit-content;
+            padding: 20px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        {%for i in data1%}
+            <h3>{{ data1[i] }}</h3>
+        {%endfor%}
+
+        <a href="new">New Quote</a>
+    </div>
+
+</body>
+</html> 
